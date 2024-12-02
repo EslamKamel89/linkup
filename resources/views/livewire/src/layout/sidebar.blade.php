@@ -10,7 +10,7 @@ new class extends Component {
 
     <!-- drawer init and show -->
     <div class="">
-        <button class="text-black  hover:bg-primary m-5 hover:text-white   font-medium rounded-md  p-5  " type="button"
+        <button class="text-black  hover:bg-primary  hover:text-white   font-medium rounded-md  p-5  " type="button"
             data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
             data-drawer-body-scrolling="true" data-drawer-backdrop="false" aria-controls="drawer-navigation">
             <i class="fa-solid fa-bars"></i>
@@ -21,7 +21,7 @@ new class extends Component {
     <div id="drawer-navigation"
         class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
         tabindex="-1" aria-labelledby="drawer-navigation-label">
-        <x-common.logo />
+        <x-src.common.logo />
 
         <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">

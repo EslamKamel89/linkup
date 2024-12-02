@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace( '_', '-', app()->getLocale() ) }}">
+<html class=" scrollbar-thumb-sky-700 scrollbar-track-primary "
+    lang="{{ str_replace( '_', '-', app()->getLocale() ) }}">
 
 <head>
     <meta charset="utf-8">
@@ -31,9 +32,10 @@
     @vite( [ 'resources/css/app.css', 'resources/js/app.js' ] )
 </head>
 
-<body class="font-sans antialiased">
-    <livewire:layout.sidebar />
-
+<body class="font-sans antialiased   ">
+    <div class=" mt-2 mx-2 mb-0 ">
+        <livewire:src.layout.sidebar />
+    </div>
     {{ $slot}}
 </body>
 
