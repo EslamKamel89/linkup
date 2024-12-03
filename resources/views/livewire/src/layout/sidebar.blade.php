@@ -10,10 +10,10 @@ new class extends Component {
 
     <!-- drawer init and show -->
     <div class="">
-        <button class="text-black  hover:bg-primary  hover:text-white   font-medium rounded-md  p-5  " type="button"
-            data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
-            data-drawer-body-scrolling="true" data-drawer-backdrop="false" aria-controls="drawer-navigation">
-            <i class="fa-solid fa-bars"></i>
+        <button class="  font-medium rounded-md  " type="button" data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation" data-drawer-body-scrolling="true" data-drawer-backdrop="false"
+            aria-controls="drawer-navigation">
+            <x-src.common.logo :showText="false" />
         </button>
     </div>
 

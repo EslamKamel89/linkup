@@ -32,11 +32,19 @@
     @vite( [ 'resources/css/app.css', 'resources/js/app.js' ] )
 </head>
 
-<body class="font-sans antialiased   ">
-    <div class=" mt-2 mx-2 mb-0 ">
-        <livewire:src.layout.sidebar />
+<body class="font-sans antialiased relative  ">
+
+    <div class="mt-2 mx-2 block md:hidden">
+        <livewire:src.layout.navbar />
     </div>
-    {{ $slot}}
+    <div class="flex flex-row">
+        <div class=" mt-2 mx-2 mb-0 hidden md:block min-w-16 ">
+            <livewire:src.layout.sidebar />
+        </div>
+        <div class="md:mt-5">
+            {{ $slot}}
+        </div>
+    </div>
 </body>
 
 </html>
