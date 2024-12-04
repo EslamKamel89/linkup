@@ -1,5 +1,11 @@
+import { intersect } from "@alpinejs/intersect";
 import "flowbite";
 import { initFlowbite } from "flowbite";
 import "./bootstrap";
-document.addEventListener("livewire:load", initFlowbite);
-document.addEventListener("livewire:updated", initFlowbite);
+
+const init = () => {
+    initFlowbite();
+    Alpine.plugin(intersect);
+};
+document.addEventListener("livewire:load", init);
+document.addEventListener("livewire:updated", init);

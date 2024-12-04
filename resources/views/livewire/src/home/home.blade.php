@@ -4,6 +4,7 @@
         <div class="lg:col-span-8 overflow-hidden">
             @include( 'livewire.src.home.includes.stories' )
             <livewire:src.post.item />
+
         </div>
         <div class="lg:col-span-4">
             @include( 'livewire.src.home.includes.suggestions' )
