@@ -2,7 +2,7 @@
 	'source' => 'https://cdn.devdojo.com/pines/videos/coast.mp4',
 ] )
 <div x-data="{playing:false, muted:false}" x-on:click.outside="$refs.player.pause()"
-    x-intersect:leave="$refs.player.pause();">
+    x-intersect:leave="$refs.player.pause();" class="">
     <div class="relative h-full w-full m-auto">
         <!-- video Player -------------------------------------------->
         <video x-ref="player" x-on:pause="playing=false" x-on:playing="playing=true"
@@ -24,7 +24,7 @@
         </div>
         <!-- pause control -->
         <!-- mute control -------------------------------------------->
-        <div class="z-[100] absolute bottom-2 right-2 m-4 bg-gray-500 text-white rounded-lg p-1 cursor-pointer">
+        <div class="z-20 absolute bottom-2 right-2 m-4 bg-gray-500 text-white rounded-lg p-1 cursor-pointer">
             <!-- mute  -------------------------------------------->
             <button class=" " x-cloak x-show="!muted"
                 x-on:click="$refs.player.muted=true;muted=true;console.log(muted);">
